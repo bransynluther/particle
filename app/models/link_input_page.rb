@@ -1,0 +1,2 @@
+class LinkInputPage < ApplicationRecord
+end
