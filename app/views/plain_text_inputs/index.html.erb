@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Plain Text Inputs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @plain_text_inputs.each do |plain_text_input| %>
+      <tr>
+        <td><%= link_to 'Show', plain_text_input %></td>
+        <td><%= link_to 'Edit', edit_plain_text_input_path(plain_text_input) %></td>
+        <td><%= link_to 'Destroy', plain_text_input, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Plain Text Input', new_plain_text_input_path %>
