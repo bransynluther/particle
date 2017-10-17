@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :user_inputs
   resources :link_input_pages
 
   resources :plain_text_inputs
