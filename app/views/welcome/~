@@ -20,6 +20,10 @@
         <div class="col-sm-4">
         </div>
         <div class="col-sm-4">
-                 </div>
+            <%= simple_form_for @user_input.new do |f| %>
+                <%= f.input :text %>
+                <%= f.input :submit %>
+            <% end %>
+        </div>
     </div>
 </div>
